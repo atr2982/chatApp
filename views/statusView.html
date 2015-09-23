@@ -1,0 +1,20 @@
+<md-input-container>
+  <label>Enter Message Here</label>
+  <textarea ng-model="status.statusText" type="text"></textarea>
+</md-input-container>
+<md-button class="md-raised md-warn btn1" ng-click="status.addStatus()">Post</md-button>
+
+<md-content>
+  <md-list>
+    <md-list-item class="md-3-line listStyling" ng-repeat="statusItem in status.statusData | orderBy:'-date'">
+      <div class="md-list-item-text">
+        <p class="colored">{{statusItem.user.username}}</p>
+        <p>{{statusItem.text}}</p>                
+      </div>
+      <md-divider md-inset></md-divider>
+      <md-icon class="delete" ng-if="statusItem.user.username === loggedInUserData.username" ng-click="status.deleteStatus(statusItem)">
+          X
+      </md-icon>
+    </md-list-item>
+  </md-list>
+</md-content>

@@ -1,0 +1,50 @@
+body {
+    background: url(../white.jpg);
+    background-size: 1500px 1000px;
+    background-repeat: no-repeat;  
+}
+
+.delete {
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.header {
+    background-color: rgb(45, 66, 117);
+    height: 50px;
+}
+
+.appName {
+    font-family: 'Indie Flower';
+    font-size: 20px;
+}
+
+.appLinks {
+    font-family: 'RobotoDraft';
+}
+
+a {
+    color: #e3e3e3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(32, 205, 231);
+}
+
+.btn1 {
+    background-color: rgb(45, 66, 117) !important;
+}
+
+.colored {
+     color: rgb(45, 66, 117) !important;   
+}
+
+.mainContent {
+     margin-top: 100px;   
+}
+
+md-content {
+     background-color: rgba(255,255,255,0);  
+}
